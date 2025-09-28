@@ -13,7 +13,7 @@ async fn spawn_client() {
 
     let connection = Endpoint::client(config)
         .unwrap()
-        .connect("https://[::1]:4433")
+        .connect("https://rig:4433")
         .await
         .unwrap();
 
