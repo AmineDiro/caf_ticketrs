@@ -3,7 +3,7 @@ use wtransport::ClientConfig;
 use wtransport::Endpoint;
 use wtransport::VarInt;
 
-const N_CLIENTS: usize = 1 << 20;
+const N_CLIENTS: usize = 1 << 16;
 
 async fn spawn_client() {
     let config = ClientConfig::builder()
